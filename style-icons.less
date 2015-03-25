@@ -1,0 +1,219 @@
+@import url("http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+
+@icon-comment:			"\f11e";
+@icon-comments:			"\f11e";
+@icon-home:				"\f38f";
+@icon-email:			"\f2eb";
+@icon-link:				"\f1fe";
+@icon-plus:				"\f2c7";
+@icon-have:				@icon-plus;
+@icon-heart:			"\f141";
+@icon-heart-broken:		"\f31d";
+@icon-wish:				@icon-heart;
+@icon-thumb-up:			"\f10d";
+@icon-thumb-down:		"\f104";
+@icon-rating:			"\f2fc";
+@icon-rating-brillante:	"\f356";
+@icon-rating-interesante:"\f349";
+@icon-user:				"\f213";
+@icon-twitter:			"\f243";
+@icon-facebook:			"\f231";
+@icon-facebook-box:		"\f231";
+@icon-gplus:			"\f235";
+@icon-whatsapp:			"\f4f0";
+@icon-youtube:			"\f24d";
+@icon-rss:				"\f23d";
+@icon-rss-box:			"\f23d";
+@icon-question:			"\f142";
+@icon-warning:			"\f3bc";
+@icon-report:			@icon-warning;
+@icon-camera:			"\f118";
+@icon-search:			"\f21f";
+@icon-close:			"\f2d7";
+@icon-play:				"\f488";
+@icon-play-circle:		"\f488";
+@icon-arrow-right:		"\f30f";
+@icon-arrow-left:		"\f2ca";
+@icon-arrow-up:			"\f366";
+@icon-arrow-down:		"\f35f";
+@icon-spinner:			"\f29d";
+@icon-save:				@icon-wish;
+@icon-computer:			"\f380";
+@icon-mobile:			"\f1fa";
+@icon-tablet:			"\f1f9";
+@icon-h-menu:			"\f394";
+@icon-tag:				"\f48d";
+@icon-settings:			"\f13d";
+@icon-respuestas:		"\f142";
+@icon-retweet:			"\f266";
+@icon-menu:				"\f20e";
+@icon-reply:			"\f21e";
+@icon-message:			"\f35b";
+@icon-drag:				"\f130";
+@icon-more:				"\f2c7";
+@icon-less:				"\f2f4";
+@icon-pinterest:		"\f2b1";
+@icon-instagram:		"\f351";
+
+
+@icon-size-base:		24px;
+@icon-size-big:			30px;
+@icon-size-small:		18px;
+
+
+/* Basic method */
+.icon(@i,@s:@icon-size-base) {
+font-size: @s;
+font-family: Ionicons, Fontawesome, Roboto;
+content: @i;
+vertical-align: top;
+
+	&:hover {
+	text-decoration: none;
+	}
+}
+
+/* Layouts */
+.icon-left(@i,@s:@icon-size-base) {
+
+	&:before {
+	.icon(@i,@s);
+	margin-right: 0.5em;
+	}
+	&:after {
+	content:"";
+	margin-right: 0;
+	margin-left: 0;
+	}
+}
+
+.icon-right(@i,@s:@icon-size-base) {
+
+	&:after {
+	.icon(@i,@s);
+	margin-left: 0.5em;
+	}
+	&:before {
+	content:"";
+	margin-right: 0;
+	margin-left: 0;
+	}
+}
+
+.icon-nomargin {
+	
+	&:before, &:after {
+	margin:0;
+	}
+}
+.icon-size(@s:@icon-size-big) {
+
+	&:before, &:after {
+	font-size:@s;
+	line-height: 1;
+	vertical-align: text-bottom;
+	}
+}
+
+.icon-faded {
+	
+	&:before, &:after {
+	opacity:0.4;
+	}
+}
+
+.icon-color(@c:#fff) {
+	
+	&:before, &:after {
+	color:@c;
+	}
+}
+
+.icon-standalone(@i,@s:@icon-size-big) {
+display: inline-block;
+.icon-left(@i);
+.icon-size(@s);
+overflow: hidden;
+text-align: center;
+
+	&:before {
+	display: inline-block;
+	width: @s;
+	height: @s;
+	font-size: @s;
+	line-height: @s*1.3;
+	vertical-align: text-bottom;
+	margin-left: auto;
+	margin-right: auto;
+	}
+}
+
+.icon-box(@w:@icon-size-big, @h:@icon-size-big, @s:@icon-size-big) {
+width: @w;
+height: @h;
+line-height: @h;
+overflow: hidden;
+
+	&:before, &:after {
+	margin:0 (@w - @s)*0.5;
+	}
+}
+
+
+.icon-remove {
+
+	&:before, &:after {
+	content:"";
+	margin-right: 0;
+	margin-left: 0;
+	}	
+}
+
+//Instances
+.nav-previous a {
+.icon-left("\f3cf");
+}
+.nav-next a {
+.icon-right("\f3d1");
+}
+
+.menu-item-33339 a,
+.menu-item-3309 a {
+.icon-left(@icon-search);
+
+	&:before {
+	margin-right:@base-gutter*1.5;
+	}
+	@media @desktop-l {
+	.icon-remove;
+	}
+}
+
+.menu-item-33344 a,
+.menu-item-3306 a {
+.icon-standalone(@icon-twitter, @icon-size-base);
+}
+.menu-item-33345 a,
+.menu-item-3307 a {
+.icon-standalone(@icon-pinterest, @icon-size-base);
+}
+.menu-item-33346 a,
+.menu-item-3308 a {
+.icon-standalone(@icon-instagram, @icon-size-base);
+}
+
+.menu-item-33344 a,
+.menu-item-3306 a,
+.menu-item-33345 a,
+.menu-item-3307 a,
+.menu-item-33346 a,
+.menu-item-3308 a {
+height: @icon-size-base*1.1;
+width: @icon-size-base;
+
+	&:before {
+	margin:0 10px 0 0;
+	}
+//.icon-box(@icon-size-base);
+}
+

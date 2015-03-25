@@ -1,0 +1,362 @@
+/* Type */
+// Type: family
+@font-body:					chaparral-pro, Georgia, serif;
+@font-forms:				Inconsolata, Monaco, Courier New, Courier, monospaced;
+@font-weight:				normal;
+@font-headings:				futura-pt, Open Sans, Segoe UI, Helvetica, Arial, sans-serif;
+@font-headings-weight:		700;
+
+//Mobile
+@m-h1-lines: 1.3;
+@m-h2-lines: 1.3;
+@m-h3-lines: 1.2;
+@m-h4-lines: 1;
+
+@m-font-size: 20px;
+@m-line-height: 25px;
+@m-h1-font-size: 24px;
+@m-h2-font-size: 23px;
+@m-h3-font-size: 21px;
+@m-h4-font-size: 20px;
+@m-font-size-mini: 16px;
+@m-line-height-mini: 20px;
+
+@m-h1-line-height: @m-line-height * @m-h1-lines;
+@m-h1-margin-top: 2 * @m-line-height;
+@m-h1-margin-bottom: 1 * @m-line-height;
+
+@m-h2-line-height: @m-line-height * @m-h2-lines;
+@m-h2-margin-top: 1.5 * @m-line-height;
+@m-h2-margin-bottom: 0.5 * @m-line-height;
+
+@m-h3-line-height: @m-line-height * @m-h3-lines;
+@m-h3-margin-top: 1 * @m-line-height;
+@m-h3-margin-bottom: 0.75 * @m-line-height;
+
+@m-h4-line-height: @m-line-height * @m-h4-lines;
+@m-h4-margin-top: 1 * @m-line-height;
+@m-h4-margin-bottom: 0.75 * @m-line-height;
+
+//Tablet and desktop
+
+@d-h1-lines: 1.8;
+@d-h2-lines: 1.6;
+@d-h3-lines: 1.2;
+@d-h4-lines: 1;
+
+/*
+@d-font-size: 26px;
+@d-line-height: 34px;
+@d-h1-font-size: 62px;
+@d-h2-font-size: 46px;
+@d-h3-font-size: 35px;
+@d-h4-font-size: 26px;
+*/
+@d-font-size: 24px;
+@d-line-height: 31px;
+@d-h1-font-size: 41px;
+@d-h2-font-size: 35px;
+@d-h3-font-size: 29px;
+@d-h4-font-size: 24px;
+@d-font-size-mini: 18px;
+@d-line-height-mini: 24px;
+
+@d-h1-line-height: @d-line-height * @d-h1-lines;
+@d-h1-margin-top: 2 * @d-line-height;
+@d-h1-margin-bottom: 1 * @d-line-height;
+
+@d-h2-line-height: @d-line-height * @d-h2-lines;
+@d-h2-margin-top: 2 * @d-line-height;
+@d-h2-margin-bottom: 1 * @d-line-height;
+
+@d-h3-line-height: @d-line-height * @d-h3-lines;
+@d-h3-margin-top: 1 * @d-line-height;
+@d-h3-margin-bottom: 1 * @d-line-height;
+
+@d-h4-line-height: @d-line-height * @d-h4-lines;
+@d-h4-margin-top: 1 * @d-line-height;
+@d-h4-margin-bottom: 1 * @d-line-height;
+
+/* Text - inline styles */
+.site-description,
+body,
+button,
+input,
+select,
+textarea, 
+.type0 {
+font-family: @font-body;
+font-weight: @font-weight;
+-webkit-font-smoothing: antialiased;
+text-rendering: optimizeLegibility;
+font-size: @m-font-size;
+line-height: @m-line-height;
+
+	@media @tablet {
+	font-size: @d-font-size;
+	line-height: @d-line-height;
+	}
+}
+
+.type1 {
+font-family: @font-headings;
+font-weight: @font-headings-weight;
+font-size: @m-h1-font-size;
+line-height: @m-h1-line-height;
+
+	@media @tablet {
+	font-size: @d-h1-font-size;
+	line-height: @d-h1-line-height;
+	}
+}
+.type2 {
+font-family: @font-headings;
+font-weight: @font-headings-weight;
+font-size: @m-h2-font-size;
+line-height: @m-h2-line-height;
+
+	@media @tablet {
+	font-size: @d-h2-font-size;
+	line-height: @d-h2-line-height;
+	}
+}
+.type3 {
+font-family: @font-headings;
+font-weight: @font-headings-weight;
+font-size: @m-h3-font-size;
+line-height: @m-h3-line-height;
+
+	@media @tablet {
+	font-size: @d-h3-font-size;
+	line-height: @d-h3-line-height;
+	}
+}
+.menu-item,
+.nav-previous a,
+.nav-next a,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.type4 {
+font-family: @font-headings;
+font-weight: @font-headings-weight;
+font-size: @m-h4-font-size;
+line-height: @m-h4-line-height;
+
+	@media @tablet {
+	font-size: @d-h4-font-size;
+	line-height: @d-h4-line-height;
+	}
+}
+
+/* Headings - block styles */
+h1,
+.heading1 {
+.type1;
+margin-top: @m-h1-margin-top;
+margin-bottom: @m-h1-margin-bottom;
+text-transform: uppercase;
+
+	@media @tablet {
+	margin-top: @d-h1-margin-top;
+	margin-bottom: @d-h1-margin-bottom;
+	}
+}
+h2,
+.heading2 {
+.type2;
+margin-top: @m-h2-margin-top;
+margin-bottom: @m-h2-margin-bottom;
+text-transform: uppercase;
+
+	@media @tablet {
+	margin-top: @d-h2-margin-top;
+	margin-bottom: @d-h2-margin-bottom;
+	}
+}
+h3,
+.widget-area h1, 
+.heading3 {
+.type3;
+margin-top: @m-h3-margin-top;
+margin-bottom: @m-h3-margin-bottom;
+text-transform: uppercase;
+
+	@media @tablet {
+	margin-top: @d-h3-margin-top;
+	margin-bottom: @d-h3-margin-bottom;
+	}
+}
+h4,
+.heading4 {
+.type4;
+margin-top: @m-h4-margin-top;
+margin-bottom: @m-h4-margin-bottom;
+text-transform: uppercase;
+
+	@media @tablet {
+	margin-top: @d-h4-margin-top;
+	margin-bottom: @d-h4-margin-bottom;
+	}
+}
+
+/* Smaller type */
+.site-description,
+.comment-meta,
+.menu-item,
+.entry-meta,
+.entry-footer,
+.comment-reply-link,
+.comment-notes,
+.form-allowed-tags,
+.nav-previous a,
+.nav-next a,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.crp_date,
+.widget,
+.site-footer,
+.font-mini {
+font-size: @m-font-size-mini;
+line-height: @m-line-height-mini;
+
+	@media @tablet {
+	font-size: @d-font-size-mini;
+	line-height: @d-line-height-mini;
+	}
+}
+
+.widget {
+
+	@media @desktop-l {
+	font-size: @d-font-size-mini;
+	line-height: @d-line-height-mini;
+	}
+}
+
+/* Bigger type */
+.font-giant {
+}
+
+/* Text - block styles */
+.site-description,
+p, 
+ul, 
+ol, 
+pre, 
+table, 
+blockquote,
+address {
+margin-top: @m-line-height;
+margin-bottom: @m-line-height;
+
+	@media @tablet {
+	margin-top: @d-line-height;
+	margin-bottom: @d-line-height;
+	}
+}
+.entry-content li,
+.entry-content dd,
+.comment-content li,
+.comment-content dd {
+margin-bottom: @m-line-height;
+
+	@media @tablet {
+	margin-bottom: @d-line-height;
+	}
+}
+
+/* Inline elements */
+a {
+text-decoration: none;
+}
+strong {
+font-weight: 900;
+}
+em {
+font-style: italic;
+}
+
+/* Instances */
+.site-description {
+font-weight: normal;
+text-transform: none;
+}
+
+.menu-item {
+text-transform: uppercase;
+font-weight: normal;
+}
+
+.comment-reply-link {
+font-weight: bold;
+}
+
+.comment-form input,
+.comment-form textarea {
+max-width: 96%;
+}
+
+.nav-previous a,
+.nav-next a,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+text-transform: uppercase;
+font-weight: normal;
+}
+
+//Posts formats
+.format-quote blockquote {
+font-size: @m-h2-font-size;
+line-height: @m-h2-line-height;
+
+	@media @tablet {
+	font-size: @d-h2-font-size;
+	line-height: @d-h2-line-height;
+	}
+}
+
+/* More */
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+
