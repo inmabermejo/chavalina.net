@@ -1,0 +1,151 @@
+//Regions
+@color-body-bg:						#fff;
+@color-secondary-bg:				#F6F6F6;//#EFEEF3;//#DFE2E7;
+
+//Text
+@color-text:						#44494f;
+@color-text-enhanced:				#33383F;
+@color-text-faded:					mix(@color-text, #fff, 50%);
+
+@color-link:						#548D3E;
+@color-link-visited:				#548D3E;
+@color-link-hover:					#548D3E;
+
+// Social networks and buttons
+@color-twitter:				#00ACEE;
+@color-facebook:			#4472AD;
+@color-gplus:				#DB4D25;
+@color-whatsapp:			#56A61E;
+@color-email:				#729e54;
+
+
+
+
+/* Styles */
+
+//Regions
+body {
+color: @color-text;
+background: @color-secondary-bg;
+}
+
+.site-header {
+background: @color-secondary-bg;
+}
+
+.site-content {
+background: @color-body-bg;
+}
+
+//Links
+a {
+color: @color-link;
+}
+
+.site-description,
+.entry-meta,
+.entry-meta a,
+.entry-footer,
+.entry-footer a,
+.comment-meta,
+.comment-metadata a,
+.comment-notes,
+.crp_date,
+.blogroll,
+.form-allowed-tags {
+color: @color-text-faded;
+}
+
+h1,
+h2,
+h3,
+h4,
+.menu-item a,
+.entry-title a,
+.entry-title a:visited,
+.comment-author a,
+.comment-author .fn {
+color: @color-text-enhanced;
+}
+
+.menu-item a:hover,
+.entry-title a:hover,
+.entry-meta a:hover,
+.entry-footer a:hover,
+.comment-metadata a:hover,
+.comment-author a:hover,
+a:hover {
+color: @color-link-hover;
+}
+
+.entry-content a,
+.comments-link a {
+//border-bottom: 2px solid mix(@color-link, @color-body-bg, 50%);
+text-decoration: underline;
+}
+
+//Footer
+.site-footer {
+background-color: @color-text;
+color: mix(@color-text, @color-secondary-bg, 50%);
+}
+.site-footer a {
+color: @color-body-bg;
+//border-bottom: 2px solid mix(@color-text, @color-body-bg, 50%);
+text-decoration: underline;
+}
+
+//Navigation 
+.nav-previous a,
+.nav-next a {
+background-color:mix(@color-text,#fff,10%);
+color: @color-text;
+}
+
+//Forms
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+background-color:mix(@color-link,#fff,90%);
+color: @color-body-bg;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+background-color:@color-link;
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+background-color:@color-link;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+color: #666;
+border: 1px solid #ccc;
+background-color: #f6f6f6;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+color: #111;
+background-color: #fff;
+}

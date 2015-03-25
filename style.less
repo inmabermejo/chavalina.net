@@ -1,0 +1,276 @@
+/*
+Theme Name: basic-20-15
+Theme URI: http://underscores.me/
+Author: Inma Bermejo
+Author URI: http://inmabermejo.com
+Description: Minimal theme for chavalina.net
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: basic-20-15
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+basic-20-15 is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+html{font:62.5% Arial, Helvetica,sans-serif;}
+body{margin:0;font-size:100%;}
+* html body{font-size:101%;}
+*:first-child+html body{font-size:101%;}
+
+h1,h2,h3,h4,h5,h6,p,pre,blockquote{margin:0;font-size:1em;}
+ul,ol,dl,dt,dd{padding:0;margin:0;}
+ul,ol{list-style:none;}
+address,cite{font-style:normal;}
+img{border:none;-ms-interpolation-mode:bicubic;}
+figure{margin:0;padding:0;}
+
+article,aside,dialog,figure,footer,header,hgroup,nav,section{display:block;}
+
+td,th{vertical-align:top;}
+caption,th{text-align:left;}
+
+form{margin:0;}
+fieldset{margin:0;padding:0;border:none;}
+legend{margin:0;padding:0;color:#000;}
+input,textarea,select{font:1em Arial,Helvetica,sans-serif;}
+textarea{overflow:auto;}
+input[type="text"]{margin:0;}
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{display:inline-block;}
+/*\*/
+.clearfix{display:block;}
+* html .clearfix{height:1px;}
+/**/
+.izq,.col-i{float:left;display:inline;}
+.drcha,.col-d{float:right;display:inline;}
+.table{display:table;height:1%;}
+
+.debug_dump {
+padding:10px !important;
+font:13px Envy Code R, Inconsolata, Consolas, Courier new, courier !important;
+background:#ffe !important;
+border:1px solid #fc0 !important;
+}
+
+
+/*
+ * Mixins
+ */
+
+.transition(@duration:0.3s, @ease:ease-out) {
+-webkit-transition: all @duration @ease;
+-moz-transition: all @duration @ease;
+transition: all @duration @ease;
+}
+
+
+/*
+ * Styles
+ */
+
+//Responsive
+@tap-size:			48px;
+
+/* Responsive: breakpoints def */
+@mobile:			~"only screen";
+@tablet:			~"only screen and (min-width: 768px)";
+@desktop:			~"only screen and (min-width: 1024px)";
+@desktop-l:			~"only screen and (min-width: 1280px)";
+@desktop-xl:		~"only screen and (min-width: 1600px)";
+
+@import "style-normalize.less";
+@import "style-type.less";
+@import "style-layout.less";
+@import "style-color.less";
+@import "style-icons.less";
+
+
+
+
+/* Testing */
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+12.1 Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0 auto;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+/*--------------------------------------------------------------
+12.2 Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+
+//Search 
+.widget-area .search-form {
+margin: @m-line-height 0;
+clear: right;
+display: inline-block;
+/*
+background: #fff;
+border-radius: @tap-size;
+padding: 2px 2px 2px 10px;
+border-bottom: 1px solid mix(@color-text-faded, @color-body-bg, 20%);
+*/
+	@media @tablet {
+	margin:@d-line-height 0;
+	}
+}
+.widget-area .search-field[type="search"] {
+background: #fff;
+border: 1px solid mix(@color-text-faded, @color-body-bg, 20%);
+margin-bottom: @m-line-height*0.5;
+padding: 0;
+border-radius: 4px;
+width: 170px;
+
+	@media @tablet {
+	margin-bottom: @d-line-height*0.5;
+	width: auto;
+	}
+	@media @desktop-l {
+	width:170px;
+	}
+	@media @desktop-xl {
+	width:250px;
+	}
+}
+
+//Archive
+.archive-search-form {
+width: 100%;
+
+	.search-field[type="search"] {
+	width: 170px;
+	padding: 0;
+	border-radius: 4px;
+
+		@media @tablet {
+		width: auto;
+		}
+	}
+}
+.archive-lists {
+width: 100%;
+overflow: hidden;
+}
+.archive-list {
+
+	@media @tablet {
+	width: 45%;
+	float: left;
+	}
+}
+.archive-list-date {
+
+	@media @tablet {
+	float: right;
+	}
+}
+
+

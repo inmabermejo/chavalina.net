@@ -1,0 +1,196 @@
+@import url("http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css");
+/* Basic method */
+/* Layouts */
+.icon-nomargin:before,
+.icon-nomargin:after {
+  margin: 0;
+}
+.icon-faded:before,
+.icon-faded:after {
+  opacity: 0.4;
+}
+.icon-remove:before,
+.icon-remove:after {
+  content: "";
+  margin-right: 0;
+  margin-left: 0;
+}
+.search-submit:after {
+  font-size: 24px;
+  font-family: Ionicons, Fontawesome, Roboto;
+  content: "\f21f";
+  vertical-align: top;
+  margin-left: 0.5em;
+}
+.search-submit:after:hover {
+  text-decoration: none;
+}
+.search-submit:before {
+  content: "";
+  margin-right: 0;
+  margin-left: 0;
+}
+.nav-previous a:before {
+  font-size: 24px;
+  font-family: Ionicons, Fontawesome, Roboto;
+  content: "\f3cf";
+  vertical-align: top;
+  margin-right: 0.5em;
+}
+.nav-previous a:before:hover {
+  text-decoration: none;
+}
+.nav-previous a:after {
+  content: "";
+  margin-right: 0;
+  margin-left: 0;
+}
+.nav-next a:after {
+  font-size: 24px;
+  font-family: Ionicons, Fontawesome, Roboto;
+  content: "\f3d1";
+  vertical-align: top;
+  margin-left: 0.5em;
+}
+.nav-next a:after:hover {
+  text-decoration: none;
+}
+.nav-next a:before {
+  content: "";
+  margin-right: 0;
+  margin-left: 0;
+}
+.menu-item-33339 a:before {
+  font-size: 24px;
+  font-family: Ionicons, Fontawesome, Roboto;
+  content: "\f21f";
+  vertical-align: top;
+  margin-right: 0.5em;
+}
+.menu-item-33339 a:before:hover {
+  text-decoration: none;
+}
+.menu-item-33339 a:after {
+  content: "";
+  margin-right: 0;
+  margin-left: 0;
+}
+.menu-item-33344 a {
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+}
+.menu-item-33344 a:before {
+  font-size: 24px;
+  font-family: Ionicons, Fontawesome, Roboto;
+  content: "\f243";
+  vertical-align: top;
+  margin-right: 0.5em;
+}
+.menu-item-33344 a:before:hover {
+  text-decoration: none;
+}
+.menu-item-33344 a:after {
+  content: "";
+  margin-right: 0;
+  margin-left: 0;
+}
+.menu-item-33344 a:before,
+.menu-item-33344 a:after {
+  font-size: 24px;
+  line-height: 1;
+  vertical-align: text-bottom;
+}
+.menu-item-33344 a:before {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 31.200000000000003px;
+  vertical-align: text-bottom;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu-item-33345 a {
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+}
+.menu-item-33345 a:before {
+  font-size: 24px;
+  font-family: Ionicons, Fontawesome, Roboto;
+  content: "\f2b1";
+  vertical-align: top;
+  margin-right: 0.5em;
+}
+.menu-item-33345 a:before:hover {
+  text-decoration: none;
+}
+.menu-item-33345 a:after {
+  content: "";
+  margin-right: 0;
+  margin-left: 0;
+}
+.menu-item-33345 a:before,
+.menu-item-33345 a:after {
+  font-size: 24px;
+  line-height: 1;
+  vertical-align: text-bottom;
+}
+.menu-item-33345 a:before {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 31.200000000000003px;
+  vertical-align: text-bottom;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu-item-33346 a {
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+}
+.menu-item-33346 a:before {
+  font-size: 24px;
+  font-family: Ionicons, Fontawesome, Roboto;
+  content: "\f351";
+  vertical-align: top;
+  margin-right: 0.5em;
+}
+.menu-item-33346 a:before:hover {
+  text-decoration: none;
+}
+.menu-item-33346 a:after {
+  content: "";
+  margin-right: 0;
+  margin-left: 0;
+}
+.menu-item-33346 a:before,
+.menu-item-33346 a:after {
+  font-size: 24px;
+  line-height: 1;
+  vertical-align: text-bottom;
+}
+.menu-item-33346 a:before {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 31.200000000000003px;
+  vertical-align: text-bottom;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu-item-33344 a,
+.menu-item-33345 a,
+.menu-item-33346 a {
+  height: 26.400000000000002px;
+  width: 24px;
+}
+.menu-item-33344 a:before,
+.menu-item-33345 a:before,
+.menu-item-33346 a:before {
+  margin: 0 10px 0 0;
+}

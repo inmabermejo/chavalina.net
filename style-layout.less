@@ -1,0 +1,292 @@
+@base-gutter:			20px;
+
+//Layout
+body {
+padding: 1px 0 0;
+}
+
+.site-header {
+
+	@media @desktop-l {
+	float:right;
+	width:30%;
+	padding-top:@d-line-height;
+	}
+}
+.site-branding {
+text-align: center;
+
+	@media @desktop-l {
+	text-align: left;
+	}
+}
+
+.widget {
+margin: 0 @base-gutter @m-line-height;
+
+	@media @tablet {
+	margin-left: @base-gutter*2;
+	margin-right: @base-gutter*2;
+	}
+}
+
+.site-branding,
+.main-navigation,
+.widget {
+
+	@media @desktop-l {
+	margin-left: @base-gutter*3;
+	margin-right: @base-gutter*3;
+	}
+}
+.site-content {
+padding: 1px 0;
+
+	@media @desktop-l {
+	float: left;
+	width: 70%;
+	padding-top:@d-line-height;
+	padding-bottom:@d-line-height;
+	}
+}
+
+.widget-area {
+padding:@m-line-height 0;
+
+	@media @desktop-l {
+	margin-left: 70%;
+	padding-top:@d-line-height;
+	padding-bottom:@d-line-height;
+	}
+}
+
+.site-footer {
+clear: both;
+padding:@m-line-height 0;
+
+	@media @desktop-l {
+	padding:@d-line-height 0;
+	text-align: center;
+	}
+}
+
+//Menus
+.menu-toggle {
+display: none;
+}
+
+.menu {
+margin: 0;
+list-style: none;
+width: 100%;
+overflow: scroll;
+white-space: nowrap;
+text-align: center;
+
+	@media @desktop-l {
+	overflow: visible;
+	white-space: normal;
+	text-align: left;
+	}
+}
+.menu-item {
+margin: 0 0 @m-line-height*0.5 @base-gutter*1.5;
+display:inline-block;
+
+	@media @desktop-l {
+	margin: 0;
+	display: block;
+	}
+}
+.menu-item:last-child {
+margin-right: @base-gutter;
+}
+.menu-item a {
+display: inline-block;
+padding: @m-line-height*0.5 0;
+
+	@media @desktop-l {
+	padding: @d-line-height*0.5 0;
+	}
+}
+
+//Social network items
+.menu-item-33344,
+.menu-item-3306,
+.menu-item-33345,
+.menu-item-3307,
+.menu-item-33346,
+.menu-item-3308 {
+margin-bottom: 0;
+
+	@media @desktop-l {
+	display: inline-block;
+	margin-right: @base-gutter*1.5;
+	margin-top: @d-line-height*0.5;
+	}
+}
+.menu-item-33344 a,
+.menu-item-3306 a,
+.menu-item-33345 a,
+.menu-item-3307 a,
+.menu-item-33346 a,
+.menu-item-3308 a {
+padding: 0;
+}
+
+//Post
+.content-area,
+.site-info {
+margin: 0 @base-gutter;
+max-width: 790px;
+	
+	@media @tablet {
+	margin: 0 10%;
+	}
+	
+	@media @desktop-l {
+	margin: 0 auto;
+	}
+}
+
+.entry-content ul,
+.entry-content ol,
+.comment-content ul,
+.comment-content ol {
+margin-left: @base-gutter;
+}
+
+.entry-content li,
+.comment-content li {
+list-style-type: square;
+}
+.entry-content ol li,
+.comment-content ol li {
+list-style-type: decimal;
+}
+
+.comments-link {
+
+}
+
+//Comments
+.comment-list {
+margin: 0;
+}
+.comment {
+list-style-type: none;
+margin-bottom: @m-line-height;
+
+	@media @desktop-l {
+	margin-bottom: @d-line-height;
+	}
+}
+.avatar {
+float: left;
+width: 48px !important;
+height: auto;
+margin-right: @base-gutter*0.5
+}
+
+.comment-form label {
+display: block;
+}
+
+.comment-form input {
+display: block;
+max-width: 90%;
+
+	@media @tablet {
+	display: inline-block;
+	width: auto;
+	}
+}
+//Blog navigation
+.nav-links {
+width: 100%;
+overflow: hidden;
+margin: @m-line-height 0;
+
+	@media @tablet {
+	margin: @d-line-height 0;
+	}
+}
+.nav-previous, .nav-next {
+width: 50%;
+}
+.nav-previous {
+float: left;
+}
+.nav-next {
+float: right;
+text-align: right;
+}
+.nav-previous a, 
+.nav-next a {
+display: block;
+max-width: 80%;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+//Related 
+
+//Buttons and forms
+@tap-size:		44px;
+
+.nav-previous a,
+.nav-next a,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+display: inline-block;
+height: @tap-size;
+line-height: @tap-size;
+border-radius: @tap-size*0.5;
+padding: 0 @base-gutter;
+border:none;
+-webkit-appearance: none;
+
+	@media @desktop-l {
+	height: @d-line-height*1.5;
+	line-height: @d-line-height*1.5;
+	border-radius: @d-line-height;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+border-radius: 2px;
+text-indent: 5px;
+-webkit-appearance: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+height: @tap-size;
+line-height: @tap-size;
+text-indent: 5px;
+}
+
+textarea {
+padding-left: 3px;
+width: 96%;
+}
+
+//Sidebar 
+.blogroll li {
+margin-bottom: @m-line-height*0.5;
+
+	@media @tablet {
+	margin-bottom: @d-line-height*0.5;
+	}
+}
